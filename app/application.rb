@@ -22,6 +22,8 @@ class Application
       @@cart.each do |cart_item|
         resp.write "#{cart_item}\n"
       end
+    else
+      resp.write "Your cart is empty"
     end
 
     resp.finish
