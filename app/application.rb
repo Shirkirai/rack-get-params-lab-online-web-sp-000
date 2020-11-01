@@ -22,7 +22,7 @@ class Application
       @@cart.each do |cart_item|
         resp.write "#{cart_item}\n"
       end
-    elseif req.path.match(/search/)
+    elsif req.path.match(/search/)
     search_term = req.params["q"]
     if @@cart.include?(search_term)
       return "#{search_term} is one of our items"
