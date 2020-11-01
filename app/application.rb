@@ -39,7 +39,7 @@ class Application
       @@cart.push(item)
       return "added #{item}"
     else
-      return "Don't have that item"
+      return "We don't have that item"
     end
   end
   def handle_search(search_term)
