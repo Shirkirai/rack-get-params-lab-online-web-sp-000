@@ -34,6 +34,9 @@ class Application
   end
 
   def add(item)
+    if @@items.include?(item)
+      @@cart.push(item)
+      return "added #{item}"
   end
   def handle_search(search_term)
     if @@items.include?(search_term)
