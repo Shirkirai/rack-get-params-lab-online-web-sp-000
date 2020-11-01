@@ -22,7 +22,7 @@ class Application
       @@cart.each do |cart_item|
         resp.write "#{cart_item}\n"
       end
-    elsif req.path.match(/search/)
+    end
 
     resp.finish
   end
