@@ -37,6 +37,9 @@ class Application
     if @@items.include?(item)
       @@cart.push(item)
       return "added #{item}"
+    else
+      return "Don't have that item"
+    end
   end
   def handle_search(search_term)
     if @@items.include?(search_term)
